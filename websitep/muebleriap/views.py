@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import sucursale
 
 # Create your views here.
 
@@ -19,3 +20,7 @@ def ofertas(request):
 
 def productos(request):
     return render(request, 'productos.html')
+
+def sucursales_view(request):
+    sucursales = sucursale.objects.all()
+    return render(request, 'contacto.html', {'sucursales': sucursales})

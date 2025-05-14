@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Base de datos de desarrollo
+*.sqlite3
+
+# Archivos de entorno virtual
+venv/
+env/
+
+# Archivos de configuración o secretos (si los tienes)
+.env
+
+# Archivos temporales de edición
+*.swp
+*.bak
+*.tmp
+*~
+
+# Archivos de log
+*.log
+
+# Archivos de migración con conflictos (opcional)
+*.orig
+
+# Archivos generados por VSCode u otros editores
+.vscode/
+.idea/

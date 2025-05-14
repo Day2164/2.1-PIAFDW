@@ -8,5 +8,24 @@
 {% endblock extra_head %}
 
 {% block content %}
+<h1 class="titulo-contacto">Nuestras Sucursales</h1>
+
+<div class="sucursales-container">
+  {% for sucursal in sucursales %}
+    <div class="sucursal-card">
+      <div class="sucursal-titulo">{{ sucursal.Nombre_Sucursal }}</div>
+      <div class="sucursal-dato"><strong>Dirección:</strong> {{ sucursal.Direccion }}</div>
+      <div class="sucursal-dato"><strong>Teléfono:</strong> {{ sucursal.Telefono }}</div>
+      <div class="sucursal-dato"><strong>Horario:</strong> {{ sucursal.Horario }}</div>
+      <div class="sucursal-dato"><strong>Ciudad:</strong> {{ sucursal.Ciudad }}</div>
+    </div>
+  {% empty %}
+    <p class="sin-sucursales">Aún no hay sucursales registradas.</p>
+  {% endfor %}
+</div>
+
+
+
 
 {% endblock %}
+
