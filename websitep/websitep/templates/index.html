@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Inicio - Mueblería Monterrey{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock extra_head %}
+
+{% block content %}
+    <h2>Calidad y diseño en cada mueble</h2>
+    <p>Somos una empresa especializada en muebles de oficina modernos y funcionales.</p>
+
+    <div class="contenedor-imagenes">
+        <div class="lado-izquierdo">
+            <img src="{% static 'img/oficina-inicio.png' %}" alt="Imagen izquierda">
+        </div>
+        <div class="lado-derecho">
+            <img src="{% static 'img/images.jpg' %}" alt="Imagen derecha 1">
+            <img src="{% static 'img/oficina-inicio2.jpg' %}" alt="Imagen derecha 2">
+        </div>
+    </div>
+{% endblock %}

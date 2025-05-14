@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Acerca de Nosotros{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/nosotros.css' %}">
+{% endblock extra_head %}
+
+{% block content %}
+  <div class="content-wrapper">
+
+    <div class="section-row section-left">
+      <div class="section-text">
+        <h2>Acerca de Nosotros</h2>
+        <p>En Mueblería Monterrey, nos dedicamos a diseñar y fabricar muebles modernos y funcionales especialmente para oficinas, con el propósito de mejorar y optimizar tus espacios de trabajo.</p>
+      </div>
+      <div class="section-image">
+        <img src="{% static 'img/nosotros.jpg' %}" alt="Acerca de Nosotros" style="width:100%; height:100%; object-fit: cover; border-radius: 12px;"> 
+      </div>
+    </div>
+
+    <div class="section-row section-right">
+      <div class="section-image">
+        <img src="{% static 'img/mision.jpg' %}" alt="Misión" style="width:100%; height:100%; object-fit: cover; border-radius: 12px;"> -->
+      </div>
+      <div class="section-text">
+        <h3>Misión</h3>
+        <p>Ofrecer soluciones de mobiliario que combinen diseño, ergonomía y funcionalidad para transformar cada espacio de oficina en un ambiente cómodo, productivo y estéticamente atractivo.</p>
+      </div>
+    </div>
+
+    <div class="section-row section-left">
+      <div class="section-text">
+        <h3>Visión</h3>
+        <p>Ser líderes en el mercado nacional de muebles para oficinas, reconocidos por la innovación, sostenibilidad y compromiso con la satisfacción total de nuestros clientes.</p>
+      </div>
+      <div class="section-image">
+        <img src="{% static 'img/vision.jpg' %}" alt="Visión" style="width:100%; height:100%; object-fit: cover; border-radius: 12px;"> 
+      </div>
+    </div>
+
+    <div class="section-center">
+      <h3>Valores</h3>
+      <ul class = "valores">
+        <li><strong>Calidad:</strong> Materiales duraderos y acabados impecables.</li>
+        <li><strong>Diseño:</strong> Creaciones modernas, elegantes y funcionales.</li>
+        <li><strong>Compromiso:</strong> Atención personalizada y servicio postventa.</li>
+        <li><strong>Sostenibilidad:</strong> Procesos responsables con el medio ambiente.</li>
+        <li><strong>Innovación:</strong> Adaptación constante a las necesidades cambiantes del mercado.</li>
+      </ul>
+    </div>
+
+  </div>
+{% endblock %}
