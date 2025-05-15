@@ -1,17 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
     padding: 20px;
 }
-
 header {
     background-color: #004080;
     color: white;
@@ -20,45 +13,115 @@ header {
     position: relative;
 }
 
-header h1 {
-    margin-bottom: 10px;
+.productos {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.productos h2 {
+  font-size: 3.5em;
+  font-weight: 700;
+  color: #2c3e50;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+  background: linear-gradient(to right, #286cfd, #2c29f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.productos h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: grey;
+  border-radius: 2px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-main {
-    margin: 30px auto;
-    max-width: 900px;
-    text-align: center;
+.producto {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
-main img {
-    width: 100%;
-    max-width: 600px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.producto:hover {
+  transform: translateY(-5px);
 }
 
-footer {
-    margin-top: 40px;
-    text-align: center;
-    padding: 15px;
-    background-color:gray;
-    font-size: 0.9em;
+.producto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
 }
+
+.producto h3 {
+  font-size: 1.4em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.precio {
+  font-size: 1.2em;
+  color: #27ae60;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #555;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  font-size: 1em;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.btn-agregar {
+  background-color: #2c7a7b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+  background-color: #226666;
+}
+

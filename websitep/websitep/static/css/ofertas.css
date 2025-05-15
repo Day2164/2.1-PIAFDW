@@ -62,3 +62,76 @@ footer {
     background-color:gray;
     font-size: 0.9em;
 }
+
+
+.ofertas-especiales {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 30px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.ofertas-especiales h2 {
+  font-size: 2em;
+  color: #b91c1c;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.ofertas-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.oferta {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative;
+  transition: transform 0.3s;
+  margin: top;
+}
+
+.oferta:hover {
+  transform: scale(1.05);
+}
+
+.oferta img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.oferta h3 {
+  font-size: 1.1em;
+  margin: 10px 0 5px;
+}
+
+.precio-original {
+  text-decoration: line-through;
+  color: #9ca3af;
+  font-size: 0.9em;
+}
+
+.precio-oferta {
+  color: #16a34a;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.etiqueta-descuento {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ef4444;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.8em;
+  border-radius: 6px;
+  font-weight: bold;
+}

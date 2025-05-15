@@ -4,9 +4,38 @@
 {% block title %}Ofertas{% endblock %}
 
 {% block extra_head %}
-<link rel="stylesheet" href="{% static 'css/contacto.css' %}">
+<link rel="stylesheet" href="{% static 'css/ofertas.css' %}">
 {% endblock extra_head %}
 
 {% block content %}
+
+<section class="ofertas-especiales">
+  <h2>🔥 ¡Ofertas Especiales de Oficina! 🔥</h2>
+  <div class="ofertas-grid">
+    <div class="oferta">
+      <img src="{% static 'img/sillavisita.jpg' %}" alt="Silla">
+      <h3>Silla</h3>
+      <p class="precio-original">$2,100</p>
+      <p class="precio-oferta">$1,512</p>
+      <span class="etiqueta-descuento">¡Ahorra 28%!</span>
+    </div>
+
+    <div class="oferta">
+      <img src="{% static 'img/lockers.jpg' %}" alt="Lockers para Empleados">
+      <h3>Lockers para Empleados</h3>
+      <p class="precio-original">$3,200</p>
+      <p class="precio-oferta">$2,200</p>
+      <span class="etiqueta-descuento">¡Oferta Limitada!</span>
+    </div>
+
+    <div class="oferta">
+      <img src="{% static 'img/Gabinete.jpg' %}" alt="Gabinete de Seguridad">
+      <h3>Gabinete de Seguridad</h3>
+      <p class="precio-original">$3,600</p>
+      <p class="precio-oferta">$2,520</p>
+      <span class="etiqueta-descuento">¡30% OFF!</span>
+    </div>
+  </div>
+</section>
 
 {% endblock %}
